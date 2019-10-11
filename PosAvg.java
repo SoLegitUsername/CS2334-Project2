@@ -49,4 +49,31 @@ public class PosAvg {
         br.close();
     }
 
+    public int indexOfStation() {
+        String tempString = "";
+        int indexNum = 0;
+
+        for (int i = 0; i < stationIDs.size(); ++i) {
+            tempString = stationIDs.get(i);
+
+            if (string.equals(tempString)) {
+                indexNum = stationIDs.indexOf(tempString);
+            }
+
+        }
+        return indexNum + 1;
+    }
+
+
+    public String toString () {
+        int index = indexOfStation();
+        String first = stationIDs.get(index);
+        String second = stationIDs.get(index - 2);
+        String third = stationIDs.get(index + 1);
+        String fourth = stationIDs.get(index - 3);
+
+        String toStr = String.format("This index is average of %s and %s, %s and %s, " +
+                "and so on.", second, first, fourth, third);
+        return toStr;
+    }
 }
