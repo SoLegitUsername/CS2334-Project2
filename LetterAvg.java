@@ -20,4 +20,25 @@ public class LetterAvg {
     }
 
 
+    public int numberOfStationWithLetterAvg() {
+        PosAvg posavg = new PosAvg();
+        int numMatches = 0;
+
+        try { posavg.fileRead(); }
+
+        catch (Exception e) { System.out.println("error in letteravg"); }
+
+        ArrayList<String> tempList = posavg.arrayListReturn();
+        for (int i = 0; i < tempList.size(); i++) {
+            String matches = tempList.get(i);
+
+            if (matches.charAt(0) == input) {
+                matchStationList.add(matches);
+                numMatches++;
+            }
+
+        }
+        return numMatches;
+    }
+
 }
