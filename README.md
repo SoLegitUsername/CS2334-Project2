@@ -13,3 +13,14 @@
 
 * letterAverage takes the result from calAverage and returns the third index of the array calAverage returns.
 
+**_LetterAvg_**
+
+* This class will calculate what stations begin in a certain letter. I initialized input and (ArrayList) matchStationList which hold those said stations to make my life easier. 
+
+* LetterAvg initializes input.
+
+* numberOfStationsWithLetterAvg will return number of matches, If the first character is similar to the input, we increment numMatches.
+
+* toString will output out data in a nice looking format. I used the join and format function to make the desired effect.
+
+
