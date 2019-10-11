@@ -45,6 +45,6 @@ public class LetterAvg {
     public String toString() {
 
         String str = String.join("\n", matchStationList);
-        return String.format("\nThey are:\n", str);
+        return String.format("\nThey are:\n%s", str);
     }
 }
