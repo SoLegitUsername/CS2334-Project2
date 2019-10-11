@@ -41,4 +41,10 @@ public class LetterAvg {
         return numMatches;
     }
 
+
+    public String toString() {
+
+        String str = String.join("\n", matchStationList);
+        return String.format("\nThey are:\n", str);
+    }
 }
