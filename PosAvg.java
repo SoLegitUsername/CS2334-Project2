@@ -64,7 +64,6 @@ public class PosAvg {
         return indexNum + 1;
     }
 
-
     public String toString () {
         int index = indexOfStation();
         String first = stationIDs.get(index);

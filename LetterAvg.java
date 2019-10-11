@@ -4,10 +4,8 @@ public class LetterAvg {
     private char input;
     private ArrayList<String> matchStationList = new ArrayList<>();
 
-
     public LetterAvg(){
     }
-
 
     public LetterAvg(char input) {
         this.input = input;
@@ -40,7 +38,6 @@ public class LetterAvg {
         }
         return numMatches;
     }
-
 
     public String toString() {
 
