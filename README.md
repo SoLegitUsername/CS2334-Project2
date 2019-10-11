@@ -10,3 +10,6 @@
 * MesoInherit method will take in mesoStation from the driver.
 
 * calAverage will calculate the average of the 4 elements from mesoStation and floors, ceilings, or rounds them and saves those numbers into an avgArray that is returned for later.
+
+* letterAverage takes the result from calAverage and returns the third index of the array calAverage returns.
+
