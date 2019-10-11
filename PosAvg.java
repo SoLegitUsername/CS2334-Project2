@@ -17,12 +17,6 @@ public class PosAvg {
 
     public PosAvg(String str) {
         this.string = str;
-        try{
-            fileRead();
-        }
-        catch(Exception e) {
-            System.out.println("error in PosAvg");
-        }
     }
 
 
@@ -63,6 +57,7 @@ public class PosAvg {
         }
         return indexNum + 1;
     }
+
 
     public String toString () {
         int index = indexOfStation();
